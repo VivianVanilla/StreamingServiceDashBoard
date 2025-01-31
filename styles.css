@@ -1,9 +1,5 @@
 @import url(src/output.css);
-
 main {
   background-image: url("images/bg.jpg");
-}
-
-* {
-  border: black solid 1px;
+  background-size: cover;
 }/*# sourceMappingURL=styles.css.map */
