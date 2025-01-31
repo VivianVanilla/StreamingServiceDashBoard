@@ -4,24 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles.css" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <script src="index.js" defer></script>
     <title>Vivflix</title>
 </head>
 <body>
 
     <main class="h-screen flex justify-center items-center gap-8">
-        <div class="bg-black/30 back backdrop-blur-sm w-1/25 h-1/3 rounded-full "> <!-- Sidebar -->
-            MEOWW
-            Meow
-            Meow
+        <div class="bg-black/30 back backdrop-blur-sm w-1/25 h-1/3 rounded-full flex "> <!-- Sidebar -->
+            
         </div>
-        <div class="bg-white/30 back backdrop-blur-sm w-8/10 flex h-3/4 rounded-2xl"> <!-- Display -->
-            <div class="border-r-4 border-white w-3xs"> <!-- Menu -->
-            Menuuu
+        <div class="bg-white/30 back backdrop-blur-sm w-9/10 flex rounded-2xl w-8/10 h-9/10"> <!-- Display -->
+            <div class="border-r-4 border-white w-2xs flex flex-col gap-2"> <!-- Menu -->
+                                                                   
+           <div class="flex flex-col items-center gap-3"> 
+            <img src="images/logo.svg" class="w-1/2 h-1/2">     
+            <a class="fa fa-eye cursor-pointer">  Browse</a>
+            <a class="fa fa-heart cursor-pointer">  Wishlist</a>
+            <a class="fa fa-calendar cursor-pointer">  Coming Soon</a> 
             </div>
-           
+            <h2 class="self-center">New Trailers 🔥</h2>
+            <div class="flex flex-col items-center gap-3 "> 
+              <div onclick=one() class="blasterpiece flex flex-col items-center place-items-baseline overflow-hidden  w-9/10 h-8/10 rounded-2xl cursor-pointer">
+                <span class="bg-white/30 backdrop-blur-xl mt-20 pb-3 w-full text-center text-white">Necromancin Dancing</span></div>
+                <div onclick=two() class="littledarkage flex flex-col items-center place-items-baseline overflow-hidden  w-9/10 h-8/10 rounded-2xl cursor-pointer">
+                    <span class="bg-white/30 backdrop-blur-xl mt-20 pb-3 w-full text-center text-white">My Little Darkage</span></div>
+                    <div onclick=three() class="tekit flex flex-col items-center place-items-baseline overflow-hidden  w-9/10 h-8/10 rounded-2xl cursor-pointer">
+                        <span class="bg-white/30 backdrop-blur-xl mt-20 pb-3 w-full text-center text-white">Tek It</span></div>  </div>
+           </div>
             <div class=" w-full  h-full"> <!-- BrowseArea -->
-                Browse
-            </div>
+                
         </div>
     </main>
 </body>
