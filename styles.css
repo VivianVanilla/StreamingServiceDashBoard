@@ -21,4 +21,20 @@ main {
 
 a {
   color: white;
+  opacity: 75%;
+}
+
+.profile {
+  background-image: url("images/profile.jpg");
+  background-size: cover;
+}
+
+.banner {
+  background-image: url("images/bg.jpg");
+  background-size: cover;
+}
+
+.buggy {
+  background-image: url("images/buggy.jpg");
+  background-size: cover;
 }/*# sourceMappingURL=styles.css.map */

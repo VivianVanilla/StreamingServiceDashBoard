@@ -16,19 +16,24 @@
 <body>
 
     <main class="h-screen flex justify-center items-center gap-8">
-        <div class="bg-black/30 back backdrop-blur-sm w-1/25 h-1/3 rounded-full flex "> <!-- Sidebar -->
-            
+        <div class="bg-black/30 back backdrop-blur-sm rounded-full flex flex-col gap-4 items-center p-5 "> <!-- Sidebar -->
+             <a class="fa fa-tv cursor-pointer"></a>
+            <a class="fa fa-wifi cursor-pointer"></a>  
+            <a class="fa fa-eye cursor-pointer"></a>  
+            <a class="fa fa-home cursor-pointer"></a>  
+            <a class="fa fa-cat cursor-pointer"></a>   
+            <a class="fa fa-search cursor-pointer"></a>         
         </div>
         <div class="bg-white/30 back backdrop-blur-sm w-9/10 flex rounded-2xl w-8/10 h-9/10"> <!-- Display -->
             <div class="border-r-4 border-white w-2xs flex flex-col gap-2"> <!-- Menu -->
-                                                                   
+                                                                  
            <div class="flex flex-col items-center gap-3"> 
             <img src="images/logo.svg" class="w-1/2 h-1/2">     
             <a class="fa fa-eye cursor-pointer">  Browse</a>
             <a class="fa fa-heart cursor-pointer">  Wishlist</a>
             <a class="fa fa-calendar cursor-pointer">  Coming Soon</a> 
             </div>
-            <h2 class="self-center">New Trailers 🔥</h2>
+            <h2 class="self-center text-white">New Trailers 🔥</h2>
             <div class="flex flex-col items-center gap-3 "> 
               <div onclick=one() class="blasterpiece flex flex-col items-center place-items-baseline overflow-hidden  w-9/10 h-8/10 rounded-2xl cursor-pointer">
                 <span class="bg-white/30 backdrop-blur-xl mt-20 pb-3 w-full text-center text-white">Necromancin Dancing</span></div>
@@ -38,7 +43,51 @@
                         <span class="bg-white/30 backdrop-blur-xl mt-20 pb-3 w-full text-center text-white">Tek It</span></div>  </div>
            </div>
             <div class=" w-full  h-full"> <!-- BrowseArea -->
-                
+                <div class="flex gap-3 mt-4 flex items-center justify-between"> 
+                <div class="ml-3" >    
+                    <a class="fa fa-angle-left ml-3"></a>
+                    <a class="fa fa-angle-right ml-3"></a>
+                    <input class="rounded-full p-2 mr-5 bg-white/30 ml-3" type="text" placeholder="Vivflix">
+
+                </div>
+               
+                <div class="prof-header flex items-center">
+                    <i class="fa fa-bell bg-white/20 p-4 rounded-full"></i>
+                    <div class="bg-white/20 rounded-full px-5 py-1 ml-5 flex items-center mr-3">
+                      <div class="profile rounded-full p-5 "></div>
+                      <div class="ml-3">
+                        <p>Netflix CEO</p>
+                        <p class="text-xs text-gray-200">@iownNetflix</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  
+             </div>   
+
+             <div class="flex flex-col">
+
+                 <div class="banner bg-white w-9/10 self-center pt-25 rounded-lg mt-3 ">
+                    <div class="text-white ml-5 mb-5 text-lg"> Neon Genesis Evangelion</div>
+                    <div class="text-white ml-5 mb-5"> 2013 - Horror - 5 Seasons</div>
+                    <h4 class="text-white ml-5 mb-5"> <span class="bg-[#ff0000] p-1 rounded-md text-white">Watch</span> <span class="fa fa-plus text-white bg-white/50 p-1 rounded-md"> </span> </h4> 
+                 </div>
+                 <h2 class=" m-3 text-white">Popcorn Mania</h2>
+                 <div class="grid grid-flow-col grid-rows-1 gap-3">
+                 <div class="tekit pt-25 rounded-lg ml-3 overflow-hidden"><span class=" bg-white/30 backdrop-blur-xl mt-20 pb-3 w-full text-center text-white">Tek It</span></div>
+                 <div class="littledarkage pt-25 rounded-lg ">2</div>
+                 <div class="buggy pt-25 rounded-lg ">3</div>
+                 <div class="blasterpiece pt-25 rounded-lg mr-3 ">4</div>
+                 
+                 </div>
+                 <h2 class=" m-3 text-white">Continue Watching</h2>
+                 <div class="grid grid-flow-col grid-rows-1 gap-3">
+                    <div class="tekit pt-15 rounded-lg ml-3 ">1</div>
+                    <div class="littledarkage pt-15 rounded-lg ">2</div>
+                    <div class="tekit pt-15 rounded-lg ">3</div>
+                    <div class="blasterpiece pt-15 rounded-lg mr-3 ">4</div>
+                </div>
+            </div>
         </div>
     </main>
 </body>
