@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../src/output.css" rel="stylesheet">
+    <script src="detail.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+   
+    <title>Vivflix</title>
+</head>
+<body class="bg-red-200">
+
+    <main class="h-screen flex flex-col justify-center items-center gap-8">
+        
+        <div class="">
+        <h1 id="title" class="font-extrabold text-3xl"> </h1>
+        <div class="flex justify-evenly">
+        <img id="img" src="">
+        <iframe id="vid"  width="500px" frameborder="0"  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen src="">   </iframe>
+    </div> 
+        <i class="fa fa-thumbs-up hover:cursor-pointer" onclick="addOne()"><span id="count"></span></i>
+        <h2 id="genre"> </h2>
+        <h3 id="description"> </h3> 
+    </div>
+
+        <div id="comments" class=" bg-amber-50 h-1/2 overflow-scroll w-full">
+        <template comment-template> 
+            <div>
+            <h3 class="font-extrabold text-l author"> </h3>
+            <p class="comment text-s"></p> 
+
+        </div>
+            
+        </template>
+        </div>
+
+        
+           
+    </main>
+</body>
+</html>
